@@ -16,6 +16,7 @@ body {
     color: #fff;
 }
 
+
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
     width: 10px;
@@ -34,8 +35,16 @@ body {
 
 /* navbar styling */
 nav {
+    top: 0;
+    left: 0;
     width: 100%;
     height: 10vh;
+    position: fixed;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px white;
+    z-index: 100;
+    margin-bottom: 100px;
+    
 }
 
 .nav-container {
@@ -131,6 +140,9 @@ nav {
 section {
     width: 100%;
     min-height: 90vh;
+    padding-top: 50px; /* Размер навбара */
+
+      
 }
 
 section .main-container {
@@ -138,6 +150,7 @@ section .main-container {
     justify-content: space-between;
     padding-left: 100px;
     align-items: center;
+    padding-top: 100px;
 }
 
 .main-container .image {
@@ -248,7 +261,7 @@ section .main-container {
 
 section .content {
     width: 80%;
-    margin: 0px auto;
+    margin: 150px auto 0;
     font-family: 'Poppins' sans-serif;
 }
 
@@ -620,20 +633,3 @@ footer .text span a:hover {
         color: #b18f8d;
      }
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
